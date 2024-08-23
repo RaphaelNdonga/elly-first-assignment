@@ -125,8 +125,12 @@ input[type="checkbox"][id^="cbx-"] {
         background-color: #2469F6;
     }
 
-    66% {
+    33% {
         background-color: #5087F8;
+    }
+
+    66% {
+        background-color: white;
     }
 
     to {
@@ -169,8 +173,8 @@ input[type="checkbox"][id^="cbx-"] {
     }
 
     66% {
-        border-right: 1px solid #E3E3E3;
-        border-bottom: 1px solid #E3E3E3;
+        border-right: 1px solid #878787;
+        border-bottom: 1px solid #878787;
         opacity: 0.5;
     }
 
