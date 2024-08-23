@@ -175,7 +175,7 @@ input[type="checkbox"][id^="cbx-"] {
     66% {
         border-right: 1px solid #878787;
         border-bottom: 1px solid #878787;
-        opacity: 0.5;
+        opacity: 0.25;
     }
 
     to {
