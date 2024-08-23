@@ -11,7 +11,6 @@ document.addEventListener("DOMContentLoaded", function () {
             if (checkbox.checked) {
                 this.style.animation = 'checkyReverse 1s ease';
                 this.style.backgroundColor = 'white';
-                document.documentElement.style.setProperty('--uncheck-animation', 'tickReverse 1s ease');
             }
         });
     });
