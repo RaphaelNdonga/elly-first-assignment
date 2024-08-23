@@ -25,8 +25,13 @@ button {
     background-color: #FFCE22;
     padding: 11px;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     margin: 10px 15px;
+}
+
+button:hover {
+    background-color: #FFD84D;
+    cursor: pointer;
 }
 
 .card {
@@ -37,7 +42,6 @@ button {
     box-shadow: 0px 8px 15px 0px #1414141F;
     box-shadow: 0px 0px 4px 0px #1414141A;
     width: 370px;
-    height: fit-content;
     padding: 10px 0;
     border-radius: 6px;
 }
@@ -47,6 +51,8 @@ button {
     justify-content: space-between;
     align-items: center;
     padding: 12px 22px;
+    height: 42px;
+    width: calc(100% - 44px);
 }
 
 .line {
