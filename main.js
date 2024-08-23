@@ -1,14 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let label = document.querySelector("label[for='cbx']");
-    label.addEventListener("click", function () {
-        if (!cbx.checked) {
-            label.style.animation = 'checky 1s ease';
-            label.style.backgroundColor = '#2469F6';
-        }
-        if (cbx.checked) {
-            label.style.animation = 'checkyReverse 1s ease';
-            label.style.backgroundColor = 'white';
-            document.documentElement.style.setProperty('--uncheck-animation', 'tickReverse 1s ease');
-        }
+    let labels = document.querySelectorAll("label[for^='cbx-']");
+    labels.forEach(label => {
+        label.addEventListener("click", function () {
+            let checkbox = document.getElementById(this.getAttribute('for'));
+            if (!checkbox.checked) {
+                this.style.animation = 'checky 1s ease';
+                this.style.backgroundColor = '#2469F6';
+                console.log("checked");
+            }
+            if (checkbox.checked) {
+                this.style.animation = 'checkyReverse 1s ease';
+                this.style.backgroundColor = 'white';
+                document.documentElement.style.setProperty('--uncheck-animation', 'tickReverse 1s ease');
+            }
+        });
     });
 });
