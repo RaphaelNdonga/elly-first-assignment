@@ -75,6 +75,8 @@ label {
     border-radius: 6px;
     cursor: pointer;
     display: block;
+    background-color: white;
+    transition: background-color 1s ease;
 }
 
 label::after {
