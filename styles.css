@@ -85,11 +85,11 @@ label::after {
     left: 8px;
     width: 7px;
     height: 15px;
-    border-right: 1px solid white;
-    border-bottom: 1px solid white;
+    border-right: 1px solid #878787;
+    border-bottom: 1px solid #878787;
     opacity: 0;
     transform: rotate(45deg) scale(1);
-    transition: opacity 0.5s ease;
+    transition: opacity 1s ease, border-right 1s ease, border-bottom 1s ease;
 }
 
 input[type="checkbox"][id^="cbx-"]:checked~label {
@@ -98,6 +98,8 @@ input[type="checkbox"][id^="cbx-"]:checked~label {
 
 input[type="checkbox"][id^="cbx-"]:checked~label::after {
     opacity: 1;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
     animation: tick 1s ease;
     transform: rotate(45deg) scale(1);
 }
