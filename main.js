@@ -6,3 +6,10 @@ function toggleAllCheckboxes(checkbox) {
         }
     });
 }
+
+function toggleAllCheckbox(checkbox) {
+    if (!checkbox.checked) {
+        const allCheckbox = document.getElementById('cbx-all');
+        allCheckbox.checked = false;
+    }
+}
